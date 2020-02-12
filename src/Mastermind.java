@@ -1,9 +1,11 @@
 import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.Frame;
 import java.awt.LayoutManager;
 
 public class Mastermind extends Frame{
 
+	
 	public Mastermind() {
 		super();
 		 
@@ -14,9 +16,16 @@ public class Mastermind extends Frame{
 		LayoutManager layout = new BorderLayout();
 		this.setLayout(layout);
 		this.add(vueClavier,BorderLayout.PAGE_END);
-		
+		this.pack();
 		this.setVisible(true);
-		this.setSize(400,720);
+		
+		this.addWindowListener(new java.awt.event.WindowAdapter() {
+			public void windowClosing(java.awt.event.WindowEvent evt) {
+				dispose();			
+				System.exit(0);	
+				}
+			}
+		);
 		
 	}
 	
