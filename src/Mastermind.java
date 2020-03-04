@@ -12,6 +12,7 @@ public class Mastermind extends Frame{
 		Modele m = new Modele();
 		
 		VueClavier vueClavier = new VueClavier();
+		VuePropositions vueProposition = new VuePropositions();
 		
 		LayoutManager layout = new BorderLayout();
 		this.setLayout(layout);
