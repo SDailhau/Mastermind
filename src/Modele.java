@@ -8,5 +8,18 @@ public class Modele {
 	public Etat etat;
 	public Rangee combinaison;
 	public Rangee[] proposition[];
-	public int tentative;	 
+
+	public int tentative;
+	
+	public void ChoixCode() {
+		for(int i=0;i<DIFFICULTE;i++) {
+			int x=(int) Math.random()*COULEURS.length-1;
+
+			this.combinaison.jetons[i]=COULEURS[x];
+		}
+		System.out.println(this.combinaison.jetons[0]);
+	}
+	
+	
+
 }
