@@ -20,6 +20,7 @@ public class Mastermind extends Frame{
 		this.add(vueClavier,BorderLayout.PAGE_END);
 		this.pack();
 		this.setVisible(true);
+		m.ChoixCode();
 		
 		this.addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowClosing(java.awt.event.WindowEvent evt) {
