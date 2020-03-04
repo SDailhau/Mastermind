@@ -10,7 +10,15 @@ public class VuePropositions extends Canvas {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
+	public VuePropositions() {
+		super();
+		this.setSize(50*Modele.DIFFICULTE,50*Modele.N_TENTATIVES);
+		this.setVisible(true);
+		this.setBackground(Color.WHITE);
+		
+		
+	}
 
 
 }
