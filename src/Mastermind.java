@@ -15,6 +15,7 @@ public class Mastermind extends Frame{
 		
 		LayoutManager layout = new BorderLayout();
 		this.setLayout(layout);
+		this.add(vueProposition,BorderLayout.PAGE_START);
 		this.add(vueClavier,BorderLayout.PAGE_END);
 		this.pack();
 		this.setVisible(true);
