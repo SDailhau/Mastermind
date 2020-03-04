@@ -8,6 +8,5 @@ public class Modele {
 	public Etat etat;
 	public Rangee combinaison;
 	public Rangee[] proposition[];
-	public int tentative;
-	
+	public int tentative;	 
 }
