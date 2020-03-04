@@ -20,7 +20,7 @@ public class VueClavier extends Panel{
 		for(int i=0;i<Modele.COULEURS.length;i++) {
 			lb[i]= new Button();
 			lb[i].setBackground(Modele.COULEURS[i]);
-			lb[i].setPreferredSize(new Dimension(20,20));
+			lb[i].setPreferredSize(new Dimension(40,40));
 			this.add(lb[i]);
 			
 		}
